@@ -6,21 +6,29 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.game-container {
-    margin-top: 3rem;
-}
+@media screen and (max-width: 800px) {
 
-.state {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-}
+  .game-container{
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
 
-.game-grid {
+  .game-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: .8rem;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .card{
+    width: 100%;
+    aspect-ratio: 1 / 1;   /* cards square rahen */
+    perspective: 600px;
+    margin: 0;
+  }
 }
+
 
 .card {
     width: 100px;
@@ -99,3 +107,4 @@ button:hover {
     margin-left: .3rem;
 }
 }
+
