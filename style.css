@@ -6,8 +6,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.game-container {
+    margin-top: 3rem;
+}
 
+.state {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
 
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .8rem;
+}
 
 .card {
     width: 100px;
@@ -65,13 +78,7 @@ button {
 
 button:hover {
     background-color: #45a049;
-
 }
-
-
-
-
-
 
 
 
