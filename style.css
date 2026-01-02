@@ -6,28 +6,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-@media screen and (max-width: 800px) {
 
-  .game-container{
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
-  }
-
-  .game-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    width: 100%;
-  }
-
-  .card{
-    width: 100%;
-    aspect-ratio: 1 / 1;   /* cards square rahen */
-    perspective: 600px;
-    margin: 0;
-  }
-}
 
 
 .card {
@@ -92,19 +71,28 @@ button:hover {
 
 
 
-@media screen and (max-width: 750px) {
-    .game-grid {
+@media screen and (max-width: 600px) {
+
+  .game-container{
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .game-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: .5rem;
-   width: 30rem;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .card{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    perspective: 600px;
+    margin: 0;
+  }
 }
-.game-container{
-    width: 30rem;
-}
-.card{
-    perspective: 100px;
-    margin-left: .3rem;
-}
-}
+
+
 
